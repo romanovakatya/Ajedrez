@@ -1,11 +1,12 @@
 //Reina/Dama/ферзь  Q q 
 public class Queen extends Piece{
 
-	//constructor,
-	public Queen(char positionColumn, int positionRow, String colour) {
-		super(positionColumn, positionRow, colour);
-		
+	public Queen(boolean isWhite) {
+		super(isWhite);
 	}
-
-	//métodos,
+	
+	@Override
+	public String toString() {
+		return this.isWhite() ? "Q" : "q";
+	}
 }

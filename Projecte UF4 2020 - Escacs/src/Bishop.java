@@ -1,11 +1,12 @@
 //Alfil/слон A a
-public class Bishop extends Piece{
+public class Bishop extends Piece {
+	public Bishop(boolean isWhite) {
+		super(isWhite);
 
-	//constructor,
-	public Bishop(char positionColumn, int positionRow, String colour) {
-		super(positionColumn, positionRow, colour);
-		
 	}
-
-	//métodos,
+	
+	@Override
+	public String toString() {
+		return this.isWhite() ? "A" : "a";
+	}
 }

@@ -1,12 +1,14 @@
 //Rey K k
 public class King extends Piece{
-	public String queen;
-	//constructor,
-	public King(char positionColumn, int positionRow, String colour) {
-		super(positionColumn, positionRow, colour);
-		this.queen = "tonta";
+	
+	public King(boolean isWhite) {
+		super(isWhite);
+
 	}
 	
-	//métodos,
+	@Override
+	public String toString() {
+		return this.isWhite() ? "K" : "k";
+	}
 
 }

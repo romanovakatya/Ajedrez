@@ -1,11 +1,13 @@
 // Caballo C c
 public class Knight extends Piece{
 
-	//constructor,
-	public Knight(char positionColumn, int positionRow, String colour) {
-		super(positionColumn, positionRow, colour);
-		
-	}
+	public Knight(boolean isWhite) {
+		super(isWhite);
 
-	//métodos,
+	}
+	
+	@Override
+	public String toString() {
+		return this.isWhite() ? "C" : "c";
+	}
 }

@@ -1,27 +1,18 @@
 //https://www.arquitecturajava.com/eclipse-git-repositorios/
 
 //clase principal para fichas, que contiene caracteristicas comunes,
-public class Piece {
-	
-	//columna puede ser a - h,
-	//fila puede ser 8 - 1,
-	//color puede ser blanco o negro,
-	char positionColumn;
-	int positionRow;
-	char nextPositionColumn;
-	int nextPositionRow;
-	String color;
-	
-	//constructor,
-	public Piece(char positionColumn, int positionRow, String color) {
-		this.positionColumn = positionColumn;
-		this.positionRow = positionRow;
-		this.color = color;
+public class Piece extends Cell {
+	private boolean isWhite;
+
+	public Piece(boolean isWhite) {
+		this.isWhite = isWhite;
 	}
 
-	//método para mover ficha,
-	public void move(char nextPositionColumn, int nextPositionRow) {
-		this.positionColumn = nextPositionColumn;
-		this.positionRow = nextPositionRow;
+	public boolean isWhite() {
+		return isWhite;
+	}
+	
+	public boolean canMove(int initialRow, int initialColumn, int nextRow, int nextColumn, boolean positionIsEmpty) {
+		return true;
 	}
 }
