@@ -11,7 +11,7 @@ public class Piece extends Cell {
 	public boolean isWhite() {
 		return isWhite;
 	}
-	
+
 	public boolean canMove(int initialRow, int initialColumn, int nextRow, int nextColumn, boolean positionIsEmpty) {
 		return true;
 	}
