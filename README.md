@@ -1,2 +1,4 @@
 # Ajedrez
-proyecto de Java de segundo curso de DAW
+
+proyecto de Java de segundo curso de DAW 
+
